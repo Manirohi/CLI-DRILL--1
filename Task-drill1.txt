@@ -1,4 +1,4 @@
-Practice Drill !
+Practice Drill 1
 
 1.mkdir hello
 	cd hello
@@ -31,6 +31,7 @@ cd ../../../
 	touch access.log
 	cd ~
 	cd hello
+	
 	tree
 
 2.Delete all The files having the .log extension
