@@ -1,0 +1,57 @@
+Practice Drill !
+
+1.mkdir hello
+	cd hello
+2.mkdir five
+	cd five
+3.mkdir six
+	cd six
+	touch c.txt
+4.mkdir seven
+	cd seven
+	touch error.log
+
+cd ../../../
+
+5.mkdir one 
+	cd one
+	touch a.txt
+	touch b.txt
+
+6.mkdir two
+	cd two
+	touch d.txt
+
+7.mkdir three 
+	cd three
+	touch e.txt
+	
+8.mkdir four
+	cd four
+	touch access.log
+	cd ~
+	cd hello
+	tree
+
+2.Delete all The files having the .log extension
+	cd hello
+	find .-type f -name "*.log" -exec rm -f {}\;
+	
+3. Add the following content to a.txt
+	cd one
+	nano a.txt
+	Unix is a family of multitasking, multiuser computer operating systems that derive from the original AT&T Unix, development starting in the 1970s at the Bell Labs research center by Ken Thompson, Dennis Ritchie, and others.
+	ctrl+x.
+	
+4.Delete the directory named five 
+	cd ../
+	rm -R five
+	
+
+5. Rename the one directory to uno.
+	mv one uno
+	
+
+6.Move a.txt to the two directory
+	mv a.txt two/
+	
