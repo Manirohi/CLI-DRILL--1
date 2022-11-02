@@ -1,58 +1,61 @@
 Practice Drill 1
 
-1.mkdir hello
-	cd hello
-2.mkdir five
-	cd five
-3.mkdir six
-	cd six
-	touch c.txt
-4.mkdir seven
-	cd seven
-	touch error.log
-
-cd ../../../
-
-5.mkdir one 
-	cd one
-	touch a.txt
-	touch b.txt
-
-6.mkdir two
-	cd two
-	touch d.txt
-
-7.mkdir three 
-	cd three
-	touch e.txt
+1.mkdir hello 	        	   making directory hello		
+	cd hello		  change directory to hello
+			
+2.mkdir five			  making directory five
+	cd five			  change directory to five
+		
+3.mkdir six			  making directory six
+	cd six			  change directory six
+	touch c.txt		  create file c.txt
 	
-8.mkdir four
-	cd four
-	touch access.log
-	cd ~
-	cd hello
+4.mkdir seven			 making directory seven
+	cd seven	 	change directory to seven
+	touch error.log	 	create a file error.log 
+
+cd ../../../		
+ 
+5.mkdir one			making directory one 
+	cd one			changing directory to one
+	touch a.txt		create a file a.txt
+	touch b.txt		create a file b.txt
+
+6.mkdir two			making directory two
+	cd two			change directory to two
+	touch d.txt		create a file d.txt
+
+7.mkdir three 			making directory three
+	cd three		change directory to three
+	touch e.txt		create a file e.txt
 	
-	tree
+8.mkdir four			making directory four
+	cd four			change directory to four
+	touch access.log	create a file access.log
+	cd ~			to go out of all directory
+	cd hello		change directory to hello
+	
+	tree			it represents the tree structure
 
 2.Delete all The files having the .log extension
-	cd hello
-	find .-type f -name "*.log" -exec rm -f {}\;
+	cd hello						change directory to hello
+	find .-type f -name "*.log" -exec rm -f {}\;		
 	
 3. Add the following content to a.txt
-	cd one
-	nano a.txt
+	cd one							change directory to one 
+	nano a.txt						Add the contents below
 	Unix is a family of multitasking, multiuser computer operating systems that derive from the original AT&T Unix, development starting in the 1970s at the Bell Labs research center by Ken Thompson, Dennis Ritchie, and others.
-	ctrl+x.
+	ctrl+x.                     
 	
 4.Delete the directory named five 
-	cd ../
-	rm -R five
+	cd ../					it will go previous directories
+	rm -R five				remove recursively Folder five
 	
 
 5. Rename the one directory to uno.
-	mv one uno
+	mv one uno					moves from one uno
 	
 
-6.Move a.txt to the two directory
-	mv a.txt two/
+6.Move a.txt to the two directory	
+	mv a.txt two/					move a.txt file to two directory										
 	
